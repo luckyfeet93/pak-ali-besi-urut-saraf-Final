@@ -38,9 +38,22 @@
 
   ensureStylesheet("/assets/css/branding.css");
   ensureStylesheet("/assets/css/directions.css");
+  ensureStylesheet("/assets/css/mobile-hero.css?v=20260722-1608");
 
   const mapsUrl = "https://maps.app.goo.gl/zMe2AY3GuwKFPzXY7";
   const wazeUrl = "https://waze.com/ul?ll=1.4881719%2C103.4135948&navigate=yes&utm_source=pak-ali-besi-website";
+
+  const heroActions = document.querySelector(".hero-actions");
+  if (heroActions && !document.querySelector(".hero-direction-actions")) {
+    const directions = document.createElement("div");
+    directions.className = "hero-direction-actions";
+    directions.setAttribute("aria-label", "Pandu arah ke Pak Ali Besi");
+    directions.innerHTML = `
+      <a class="button button--secondary" href="${mapsUrl}" target="_blank" rel="noopener noreferrer">Google Maps</a>
+      <a class="button button--secondary" href="${wazeUrl}" target="_blank" rel="noopener noreferrer">Waze</a>
+    `;
+    heroActions.insertAdjacentElement("afterend", directions);
+  }
 
   const finalContainer = document.querySelector(".final .container");
   if (finalContainer && !finalContainer.querySelector(".final-direction-actions")) {
