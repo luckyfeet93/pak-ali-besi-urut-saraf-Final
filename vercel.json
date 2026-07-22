@@ -1,0 +1,6 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "outputDirectory": "pak-ali-besi-urut-saraf-site",
+  "cleanUrls": true,
+  "trailingSlash": false
+}
