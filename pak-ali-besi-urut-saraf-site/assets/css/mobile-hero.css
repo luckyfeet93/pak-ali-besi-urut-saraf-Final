@@ -15,6 +15,32 @@
   display: none !important;
 }
 
+/* Preserve the original source-image proportions on every screen size. */
+.hero {
+  min-height: 0 !important;
+  align-items: start !important;
+}
+
+.hero-media,
+.about-media {
+  min-height: 0 !important;
+  height: auto !important;
+  overflow: visible !important;
+  align-self: start !important;
+}
+
+.hero-media > img,
+.about-media img {
+  display: block !important;
+  width: 100% !important;
+  height: auto !important;
+  min-height: 0 !important;
+  max-height: none !important;
+  aspect-ratio: auto !important;
+  object-fit: contain !important;
+  object-position: center !important;
+}
+
 @media (max-width: 900px) {
   body.menu-open {
     overflow: hidden !important;
@@ -59,7 +85,6 @@
   }
 
   .hero {
-    min-height: 0 !important;
     grid-template-columns: minmax(0, 1fr) !important;
   }
 
@@ -72,38 +97,6 @@
     font-size: clamp(2.65rem, 10.5vw, 4.25rem) !important;
     line-height: 1.02 !important;
     overflow-wrap: break-word !important;
-  }
-
-  .hero-media {
-    min-height: 0 !important;
-    height: auto !important;
-    overflow: visible !important;
-  }
-
-  .hero-media > img {
-    display: block !important;
-    width: 100% !important;
-    height: auto !important;
-    min-height: 0 !important;
-    max-height: none !important;
-    aspect-ratio: auto !important;
-    object-fit: contain !important;
-    object-position: center !important;
-  }
-
-  .about-media {
-    overflow: visible !important;
-  }
-
-  .about-media img {
-    display: block !important;
-    width: 100% !important;
-    height: auto !important;
-    min-height: 0 !important;
-    max-height: none !important;
-    aspect-ratio: auto !important;
-    object-fit: contain !important;
-    object-position: center !important;
   }
 }
 
