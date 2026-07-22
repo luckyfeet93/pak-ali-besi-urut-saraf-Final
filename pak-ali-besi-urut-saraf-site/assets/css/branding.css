@@ -1,0 +1,33 @@
+.brand {
+  width: clamp(190px, 16vw, 230px);
+  height: 60px;
+  flex: 0 0 auto;
+  display: inline-block;
+  background-image: url("/assets/images/pak-ali-besi-logo.png");
+  background-position: left center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.brand .brand-mark,
+.brand .brand-copy {
+  display: none;
+}
+
+.brand--footer {
+  width: min(250px, 100%);
+  height: 66px;
+  filter: brightness(0) invert(1);
+}
+
+@media (max-width: 620px) {
+  .brand {
+    width: 178px;
+    height: 48px;
+  }
+
+  .brand--footer {
+    width: min(220px, 100%);
+    height: 58px;
+  }
+}

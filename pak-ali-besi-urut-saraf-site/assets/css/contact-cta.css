@@ -1,0 +1,68 @@
+@import url("/assets/css/branding.css");
+
+.contact-buttons {
+  margin: 2rem 0;
+  display: grid;
+  gap: 0.85rem;
+}
+
+.contact-button {
+  width: 100%;
+  min-height: 76px;
+  padding: 1rem 1.2rem;
+  border: 1px solid var(--ink-24);
+  border-radius: var(--radius);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.25rem;
+  color: var(--ink);
+  background: var(--eggshell);
+  text-decoration: none;
+  transition:
+    color 180ms ease,
+    background-color 180ms ease,
+    border-color 180ms ease,
+    transform 180ms ease;
+}
+
+.contact-button span {
+  color: var(--ink-60);
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.contact-button strong {
+  font-size: 0.95rem;
+  font-weight: 700;
+  text-align: right;
+}
+
+.contact-button:hover,
+.contact-button:focus-visible {
+  border-color: var(--ink);
+  color: var(--eggshell);
+  background: var(--ink);
+  transform: translateY(-2px);
+}
+
+.contact-button:hover span,
+.contact-button:focus-visible span {
+  color: var(--eggshell-72);
+}
+
+@media (max-width: 620px) {
+  .contact-button {
+    min-height: 88px;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.25rem;
+  }
+
+  .contact-button strong {
+    text-align: left;
+  }
+}

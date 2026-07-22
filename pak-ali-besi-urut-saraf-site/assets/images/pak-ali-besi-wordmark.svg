@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 144" role="img" aria-labelledby="title desc">
+  <title id="title">Pak Ali Besi Urut Saraf Pontian</title>
+  <desc id="desc">Logo Pak Ali Besi with circular PAB monogram and wordmark.</desc>
+  <g fill="none" stroke="#20211f" stroke-width="3">
+    <circle cx="72" cy="72" r="54"/>
+    <path d="M50 93V51h20c17 0 27 8 27 21 0 14-10 21-27 21H50zm14-12h7c8 0 12-3 12-9s-4-9-12-9h-7v18z" fill="#20211f" stroke="none"/>
+    <path d="M98 93l15-42h15l15 42h-14l-3-10h-13l-3 10H98zm19-21h7l-3-12-4 12z" fill="#20211f" stroke="none"/>
+  </g>
+  <g fill="#20211f" font-family="Manrope, Arial, sans-serif">
+    <text x="154" y="68" font-size="46" font-weight="700" letter-spacing="1">PAK ALI BESI</text>
+    <text x="156" y="106" font-size="20" font-weight="600" letter-spacing="5">URUT SARAF · PONTIAN</text>
+  </g>
+</svg>

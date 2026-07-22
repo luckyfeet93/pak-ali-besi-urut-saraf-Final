@@ -1,0 +1,15 @@
+{
+  "name": "Pak Ali Besi Urut Saraf",
+  "short_name": "Pak Ali Besi",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#F5F1E8",
+  "theme_color": "#29483A",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}
